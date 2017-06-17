@@ -338,7 +338,7 @@ zImage-dtb: vmlinux scripts dtbs
 archclean:
 	$(Q)$(MAKE) $(clean)=$(boot)
 
-# My testing targets (bypasses dependencies)
+# My testing targets (bypasses dependencies) #ritik
 bp:;	$(Q)$(MAKE) $(build)=$(boot) MACHINE=$(MACHINE) $(boot)/bootpImage
 i zi:;	$(Q)$(MAKE) $(build)=$(boot) MACHINE=$(MACHINE) $@
 
